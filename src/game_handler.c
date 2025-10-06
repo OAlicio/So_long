@@ -69,7 +69,7 @@ int	key_handler(int keycode, t_vars *vars)
 	{
 		ft_printf("Exited Early.\n");
 		free_all(vars, 0);
-		return (1);
+		return (0);
 	}
 	if (keycode == XK_w || keycode == XK_Up || keycode == XK_a
 		|| keycode == XK_Left || keycode == XK_s || keycode == XK_Down

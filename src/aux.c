@@ -19,7 +19,7 @@ void	verify_params(int argc, char **argv, t_vars *vars)
 	if (argc != 2)
 	{
 		ft_putendl_fd("Error\nUsage: ./so_long maps/<file.ber>.", 2);
-		exit(0);
+		exit(1);
 	}
 	vars->map_check = ft_substr(ft_strrchr(argv[1], '/'),
 			0, ft_strlen(ft_strrchr(argv[1], '/')));
