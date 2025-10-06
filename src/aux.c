@@ -24,7 +24,7 @@ void	verify_params(int argc, char **argv, t_vars *vars)
 	vars->map_check = ft_substr(ft_strrchr(argv[1], '/'),
 			0, ft_strlen(ft_strrchr(argv[1], '/')));
 	if (!vars->map_check)
-		exit_with_error(vars, "No map was provided.");
+		exit_with_error(vars, "Map need to be in a folder <maps/map.ber>.");
 	if ((vars->map_check[1] == '.' && vars->map_check[2] != '.')
 		|| (ft_memcmp(ft_strrchr(vars->map_check, '.'), ".ber", 4) != 0))
 		exit_with_error(vars, "Map name: map.ber");
